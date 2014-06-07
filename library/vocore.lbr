@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -116,7 +116,7 @@
 </packages>
 <symbols>
 <symbol name="VOCORE_V10A">
-<pin name="1V8" x="-40.64" y="12.7" length="middle" direction="pwr"/>
+<pin name="1V8_OUT" x="-40.64" y="12.7" length="middle" direction="pwr"/>
 <pin name="GP12/PCM_CLK" x="-40.64" y="10.16" length="middle"/>
 <pin name="GP09/I2S_SDO" x="-40.64" y="7.62" length="middle"/>
 <pin name="GP22/LED0" x="-40.64" y="5.08" length="middle"/>
@@ -157,7 +157,7 @@
 <pin name="GP00" x="20.32" y="25.4" length="middle" rot="R270"/>
 <pin name="GND@4" x="27.94" y="-25.4" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND@5" x="30.48" y="-25.4" length="middle" direction="pwr" rot="R90"/>
-<pin name="3V2@2" x="20.32" y="-25.4" length="middle" rot="R90"/>
+<pin name="3V3@2" x="20.32" y="-25.4" length="middle" rot="R90"/>
 <pin name="GP14/PCM_DTX" x="-40.64" y="-12.7" length="middle"/>
 <wire x1="-35.56" y1="20.32" x2="35.56" y2="20.32" width="0.254" layer="94"/>
 <wire x1="35.56" y1="20.32" x2="35.56" y2="-20.32" width="0.254" layer="94"/>
@@ -177,9 +177,9 @@ Found a bug? Get in touch or send a pull request at &lt;a href="https://github.c
 <devices>
 <device name="" package="VOCORE_V10A">
 <connects>
-<connect gate="MOD$1" pin="1V8" pad="W1"/>
-<connect gate="MOD$1" pin="3V2@2" pad="S14"/>
+<connect gate="MOD$1" pin="1V8_OUT" pad="W1"/>
 <connect gate="MOD$1" pin="3V3@1" pad="S13"/>
+<connect gate="MOD$1" pin="3V3@2" pad="S14"/>
 <connect gate="MOD$1" pin="GND@1" pad="N3"/>
 <connect gate="MOD$1" pin="GND@2" pad="N4"/>
 <connect gate="MOD$1" pin="GND@4" pad="S17"/>
