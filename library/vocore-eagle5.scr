@@ -1,0 +1,191 @@
+# Library script
+# 
+# Exported from D:/eagle/lbr/vocore-eagle5.lbr at 09.06.2014 07:13:22
+# 
+# EAGLE Version 5.11.0 Copyright (c) 1988-2010 CadSoft
+# 
+Set Wire_Bend 2;
+# Grid changed to 'mm' to avoid loss of precision!
+Grid mm;
+Layer   1 Top;
+Layer   2 Route2;
+Layer   3 Route3;
+Layer  14 Route14;
+Layer  15 Route15;
+Layer  16 Bottom;
+Layer  17 Pads;
+Layer  18 Vias;
+Layer  19 Unrouted;
+Layer  20 Dimension;
+Layer  21 tPlace;
+Layer  22 bPlace;
+Layer  23 tOrigins;
+Layer  24 bOrigins;
+Layer  25 tNames;
+Layer  26 bNames;
+Layer  27 tValues;
+Layer  28 bValues;
+Layer  29 tStop;
+Layer  30 bStop;
+Layer  31 tCream;
+Layer  32 bCream;
+Layer  33 tFinish;
+Layer  34 bFinish;
+Layer  35 tGlue;
+Layer  36 bGlue;
+Layer  37 tTest;
+Layer  38 bTest;
+Layer  39 tKeepout;
+Layer  40 bKeepout;
+Layer  41 tRestrict;
+Layer  42 bRestrict;
+Layer  43 vRestrict;
+Layer  44 Drills;
+Layer  45 Holes;
+Layer  46 Milling;
+Layer  47 Measures;
+Layer  48 Document;
+Layer  49 Reference;
+Layer  51 tDocu;
+Layer  52 bDocu;
+Layer  91 Nets;
+Layer  92 Busses;
+Layer  93 Pins;
+Layer  94 Symbols;
+Layer  95 Names;
+Layer  96 Values;
+Layer  97 Info;
+Layer  98 Guide;
+Description '\
+<h3>VoCore EAGLE library</h3>\n\
+<a href="https://github.com/omerk/vocore-evk">https://github.com/omerk/vocore-evk</a>';
+
+Edit 'VOCORE_V10A.sym';
+Pin '1V8_OUT' Pwr None Middle R0 Both 0 (-40.64 12.7);
+Pin 'GP12/PCM_CLK' I/O None Middle R0 Both 0 (-40.64 10.16);
+Pin 'GP09/I2S_SDO' I/O None Middle R0 Both 0 (-40.64 7.62);
+Pin 'GP22/LED0' I/O None Middle R0 Both 0 (-40.64 5.08);
+Pin 'GP08/I2S_WS' I/O None Middle R0 Both 0 (-40.64 2.54);
+Pin 'GP23/LED1' I/O None Middle R0 Both 0 (-40.64 0);
+Pin 'GP13/PCM_DRX' I/O None Middle R0 Both 0 (-40.64 -2.54);
+Pin 'GP24/LED2' I/O None Middle R0 Both 0 (-40.64 -5.08);
+Pin 'GP27/SPI_CS1' I/O None Middle R0 Both 0 (-40.64 -7.62);
+Pin 'GP25/LED3' I/O None Middle R0 Both 0 (-40.64 -10.16);
+Pin 'GP26/LED4' I/O None Middle R0 Both 0 (-40.64 -15.24);
+Pin 'TXD2' I/O None Middle R0 Both 0 (-40.64 -17.78);
+Pin 'VIN@1' Pwr None Middle R270 Both 0 (0 25.4);
+Pin 'VIN@2' Pwr None Middle R270 Both 0 (2.54 25.4);
+Pin 'GND@1' Pwr None Middle R270 Both 0 (5.08 25.4);
+Pin 'GND@2' Pwr None Middle R270 Both 0 (7.62 25.4);
+Pin 'GP17/JTAG_TDO' I/O None Middle R270 Both 0 (10.16 25.4);
+Pin 'GP21/JTAG_TRST' I/O None Middle R270 Both 0 (12.7 25.4);
+Pin 'GP20/JTAG_TCLK' I/O None Middle R270 Both 0 (15.24 25.4);
+Pin 'GP19/JTAG_TMS' I/O None Middle R270 Both 0 (17.78 25.4);
+Pin 'GP18JTAG_TDI' I/O None Middle R270 Both 0 (22.86 25.4);
+Pin 'GP02/I2C_SDA' I/O None Middle R270 Both 0 (27.94 25.4);
+Pin 'GP01/I2C_SCL' I/O None Middle R270 Both 0 (25.4 25.4);
+Pin 'GP07/I2S_CLK' I/O None Middle R90 Both 0 (-12.7 -25.4);
+Pin 'GP10/I2S_SDI' I/O None Middle R90 Both 0 (-10.16 -25.4);
+Pin 'RXD2' I/O None Middle R90 Both 0 (-7.62 -25.4);
+Pin 'GP11/PCM_FS' I/O None Middle R90 Both 0 (-5.08 -25.4);
+Pin 'P0TN' I/O None Middle R90 Both 0 (-2.54 -25.4);
+Pin 'P0TP' I/O None Middle R90 Both 0 (0 -25.4);
+Pin 'P0RP' I/O None Middle R90 Both 0 (2.54 -25.4);
+Pin 'P0RN' I/O None Middle R90 Both 0 (5.08 -25.4);
+Pin 'P4TN' I/O None Middle R90 Both 0 (10.16 -25.4);
+Pin 'P4TP' I/O None Middle R90 Both 0 (7.62 -25.4);
+Pin 'P4RP' I/O None Middle R90 Both 0 (12.7 -25.4);
+Pin 'P4RN' I/O None Middle R90 Both 0 (15.24 -25.4);
+Pin '3V3@1' I/O None Middle R90 Both 0 (17.78 -25.4);
+Pin 'USB_M' I/O None Middle R90 Both 0 (22.86 -25.4);
+Pin 'USB_P' I/O None Middle R90 Both 0 (25.4 -25.4);
+Pin 'GP00' I/O None Middle R270 Both 0 (20.32 25.4);
+Pin 'GND@4' Pwr None Middle R90 Both 0 (27.94 -25.4);
+Pin 'GND@5' Pwr None Middle R90 Both 0 (30.48 -25.4);
+Pin '3V3@2' I/O None Middle R90 Both 0 (20.32 -25.4);
+Pin 'GP14/PCM_DTX' I/O None Middle R0 Both 0 (-40.64 -12.7);
+Layer 94;
+Change Style Continuous;
+Wire  0.254 (-35.56 20.32) (35.56 20.32) (35.56 -20.32) (-35.56 -20.32) \
+      (-35.56 20.32);
+Layer 95;
+Change Size 1.778;
+Change Ratio 8;
+Change Font Proportional;
+Text '>NAME' R0 (-35.56 21.59);
+
+Edit 'VOCORE_V10A.pac';
+Description '';
+Layer 21;
+Wire  0.1524 (-12.5 -12.5) (12.5 -12.5) (12.5 12.5) (-12.5 12.5) \
+      (-12.5 -12.5);
+Layer 51;
+Change Style ShortDash;
+Wire  0.1524 (-12.5 6.296) (-5.388 6.296) (-5.388 12.392);
+Change Drill 0.55;Pad 'S1' Round 0.9058 R0 (-10.1378 -11.9412);
+Change Drill 0.55;Pad 'S2' Round 0.9058 R0 (-8.8678 -11.9412);
+Change Drill 0.55;Pad 'S3' Round 0.9058 R0 (-7.5978 -11.9412);
+Change Drill 0.55;Pad 'S4' Round 0.9058 R0 (-6.3278 -11.9412);
+Change Drill 0.55;Pad 'W13' Round 0.9058 R0 (-11.9158 -10.1632);
+Change Drill 0.55;Pad 'W12' Round 0.9058 R0 (-11.9158 -8.8932);
+Change Drill 0.55;Pad 'W11' Round 0.9058 R0 (-11.9158 -7.6232);
+Change Drill 0.55;Pad 'W10' Round 0.9058 R0 (-11.9158 -6.3532);
+Change Drill 0.55;Pad 'W9' Round 0.9058 R0 (-11.9158 -5.0832);
+Change Drill 0.55;Pad 'W8' Round 0.9058 R0 (-11.9158 -3.8132);
+Change Drill 0.55;Pad 'W7' Round 0.9058 R0 (-11.9158 -2.5432);
+Change Drill 0.55;Pad 'W6' Round 0.9058 R0 (-11.9158 -1.2732);
+Change Drill 0.55;Pad 'W5' Round 0.9058 R0 (-11.9158 -0.0032);
+Change Drill 0.55;Pad 'W4' Round 0.9058 R0 (-11.9158 1.2668);
+Change Drill 0.55;Pad 'W3' Round 0.9058 R0 (-11.9158 2.5368);
+Change Drill 0.55;Pad 'W2' Round 0.9058 R0 (-11.9158 3.8068);
+Change Drill 0.55;Pad 'W1' Round 0.9058 R0 (-11.9158 5.0768);
+Change Drill 0.55;Pad 'N2' Round 0.9058 R0 (-2.5407 11.9119);
+Change Drill 0.55;Pad 'N3' Round 0.9058 R0 (-1.2478 11.9094);
+Change Drill 0.55;Pad 'N4' Round 0.9058 R0 (0.0222 11.9094);
+Change Drill 0.55;Pad 'N1' Round 0.9058 R0 (-3.7878 11.9094);
+Change Drill 0.55;Pad 'S9' Round 0.9058 R0 (0.0222 -11.9412);
+Change Drill 0.55;Pad 'S5' Round 0.9058 R0 (-5.0578 -11.9412);
+Change Drill 0.55;Pad 'S6' Round 0.9058 R0 (-3.7878 -11.9412);
+Change Drill 0.55;Pad 'S7' Round 0.9058 R0 (-2.5178 -11.9412);
+Change Drill 0.55;Pad 'S8' Round 0.9058 R0 (-1.2478 -11.9412);
+Change Drill 0.55;Pad 'S12' Round 0.9058 R0 (3.8322 -11.9412);
+Change Drill 0.55;Pad 'S11' Round 0.9058 R0 (2.5622 -11.9412);
+Change Drill 0.55;Pad 'S10' Round 0.9058 R0 (1.2922 -11.9412);
+Change Drill 0.55;Pad 'S14' Round 0.9058 R0 (6.3722 -11.9412);
+Change Drill 0.55;Pad 'S13' Round 0.9058 R0 (5.1022 -11.9412);
+Change Drill 0.55;Pad 'N8' Round 0.9058 R0 (5.0793 11.9119);
+Change Drill 0.55;Pad 'N9' Round 0.9058 R0 (6.3493 11.9119);
+Change Drill 0.55;Pad 'N5' Round 0.9058 R0 (1.2693 11.9119);
+Change Drill 0.55;Pad 'N6' Round 0.9058 R0 (2.5393 11.9119);
+Change Drill 0.55;Pad 'N7' Round 0.9058 R0 (3.8093 11.9119);
+Change Drill 0.55;Pad 'N11' Round 0.9058 R0 (8.8893 11.9119);
+Change Drill 0.55;Pad 'N12' Round 0.9058 R0 (10.1593 11.9119);
+Change Drill 0.55;Pad 'N10' Round 0.9058 R0 (7.6193 11.9119);
+Change Drill 0.55;Pad 'S16' Round 0.9058 R0 (8.9122 -11.9412);
+Change Drill 0.55;Pad 'S18' Round 0.9058 R0 (11.4522 -11.9412);
+Change Drill 0.55;Pad 'S17' Round 0.9058 R0 (10.1822 -11.9412);
+Change Drill 0.55;Pad 'S15' Round 0.9058 R0 (7.6422 -11.9412);
+Layer 25;
+Change Size 1.27;
+Change Ratio 8;
+Text '>NAME' R0 (0 0);
+
+Edit 'VOCORE_V10A.dev';
+Prefix '';
+Description '\
+<b>VoCore module footprint, revision 1.0a</b><br />Based on: <a href="http://vonger.cn/wp-content/uploads/2014/06/VoCore.v1.0a.pcb_.pdf">http://vonger.cn/wp-content/uploads/2014/06/VoCore.v1.0a.pcb_.pdf</a>\n\
+<br /><br />\n\
+Found a bug? Get in touch or send a pull request at <a href="https://github.com/omerk/vocore-evk">https://github.com/omerk/vocore-evk</a>';
+Value Off;
+Add VOCORE_V10A 'MOD$1' Next 0 (0 2.54);
+Package 'VOCORE_V10A' '''''';
+Technology '';
+Connect  'MOD$1.GP07/I2S_CLK' 'S1'  'MOD$1.GP10/I2S_SDI' 'S2'  'MOD$1.RXD2' 'S3'  'MOD$1.GP11/PCM_FS' 'S4'  'MOD$1.TXD2' 'W13' \
+         'MOD$1.GP26/LED4' 'W12'  'MOD$1.GP14/PCM_DTX' 'W11'  'MOD$1.GP25/LED3' 'W10'  'MOD$1.GP27/SPI_CS1' 'W9'  'MOD$1.GP24/LED2' 'W8'  'MOD$1.GP13/PCM_DRX' 'W7' \
+         'MOD$1.GP23/LED1' 'W6'  'MOD$1.GP08/I2S_WS' 'W5'  'MOD$1.GP22/LED0' 'W4'  'MOD$1.GP09/I2S_SDO' 'W3'  'MOD$1.GP12/PCM_CLK' 'W2'  'MOD$1.1V8_OUT' 'W1' \
+         'MOD$1.VIN@2' 'N2'  'MOD$1.GND@1' 'N3'  'MOD$1.GND@2' 'N4'  'MOD$1.VIN@1' 'N1'  'MOD$1.P4TP' 'S9'  'MOD$1.P0TN' 'S5' \
+         'MOD$1.P0TP' 'S6'  'MOD$1.P0RP' 'S7'  'MOD$1.P0RN' 'S8'  'MOD$1.P4RN' 'S12'  'MOD$1.P4RP' 'S11'  'MOD$1.P4TN' 'S10' \
+         'MOD$1.3V3@2' 'S14'  'MOD$1.3V3@1' 'S13'  'MOD$1.GP19/JTAG_TMS' 'N8'  'MOD$1.GP00' 'N9'  'MOD$1.GP17/JTAG_TDO' 'N5'  'MOD$1.GP21/JTAG_TRST' 'N6' \
+         'MOD$1.GP20/JTAG_TCLK' 'N7'  'MOD$1.GP01/I2C_SCL' 'N11'  'MOD$1.GP02/I2C_SDA' 'N12'  'MOD$1.GP18JTAG_TDI' 'N10'  'MOD$1.USB_P' 'S16'  'MOD$1.GND@5' 'S18' \
+         'MOD$1.GND@4' 'S17'  'MOD$1.USB_M' 'S15';
+Grid inch;
