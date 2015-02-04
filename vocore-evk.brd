@@ -1894,10 +1894,10 @@ design rules under a new name.
 <wire x1="23" y1="14" x2="27" y2="14" width="0.254" layer="1"/>
 <wire x1="27" y1="14" x2="27.559" y2="13.97" width="0.254" layer="1"/>
 <wire x1="23" y1="14" x2="22.606" y2="13.97" width="0.254" layer="1"/>
-<wire x1="21" y1="8" x2="19" y2="6" width="0.254" layer="16"/>
-<wire x1="22" y1="8" x2="21" y2="8" width="0.254" layer="16"/>
-<wire x1="27" y1="13" x2="22" y2="8" width="0.254" layer="16"/>
-<wire x1="19" y1="6" x2="18.669" y2="5.8928" width="0.254" layer="16"/>
+<wire x1="21" y1="8" x2="19" y2="6" width="0.254" layer="1"/>
+<wire x1="22" y1="8" x2="21" y2="8" width="0.254" layer="1"/>
+<wire x1="27" y1="13" x2="22" y2="8" width="0.254" layer="1"/>
+<wire x1="19" y1="6" x2="18.669" y2="5.8928" width="0.254" layer="1"/>
 <wire x1="27" y1="13" x2="27.559" y2="13.97" width="0.254" layer="16"/>
 <wire x1="29" y1="8" x2="31" y2="6" width="0.254" layer="1"/>
 <wire x1="27" y1="8" x2="29" y2="8" width="0.254" layer="1"/>
